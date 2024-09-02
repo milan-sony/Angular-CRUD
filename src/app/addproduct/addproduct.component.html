@@ -1,0 +1,30 @@
+<div style="text-align: center;">
+    <h1><b>Add Products</b></h1>
+    <form [formGroup]="add_data" (ngSubmit)="addData()">
+
+        <br>
+        <br>
+
+        <b><label for="">Name</label></b>
+        <br>
+        <input type="text" name="name" formControlName="name">
+        <br>
+        <br>
+
+        <b><label for="">Price</label></b>
+        <br>
+        <input type="number" name="price" formControlName="price">
+        <br>
+        <br>
+
+        <b><label for="">Stock</label></b>
+        <br>
+        <input type="number" name="stock" formControlName="stock">
+        <br>
+        <br>
+
+        <input type="submit" value="S U B M I T">
+
+    </form>
+
+</div>

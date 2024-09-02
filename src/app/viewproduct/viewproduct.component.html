@@ -1,0 +1,20 @@
+<h1><b>View Products</b></h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Product Name</th>
+            <th scope="col">Product Price</th>
+            <th scope="col">Product Stock</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let details of datas">
+            <th scope="row">{{details.pid}}</th>
+            <td>{{details.name}}</td>
+            <td>{{details.price}}</td>
+            <td>{{details.stock}}</td>
+        </tr>
+    </tbody>
+</table>

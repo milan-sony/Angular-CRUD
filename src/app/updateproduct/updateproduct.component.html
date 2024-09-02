@@ -1,0 +1,36 @@
+<div style="text-align: center;">
+    <h1><b>Update Product</b></h1>
+    <form [formGroup]="update_data" (ngSubmit)="updateData()">
+
+        <br>
+        <br>
+
+        <b><label for="">ID</label></b>
+        <br>
+        <input type="text" name="pid" formControlName="pid">
+        <br>
+        <br>
+
+        <b><label for="">Name</label></b>
+        <br>
+        <input type="text" name="name" formControlName="name">
+        <br>
+        <br>
+
+        <b><label for="">Price</label></b>
+        <br>
+        <input type="number" name="price" formControlName="price">
+        <br>
+        <br>
+
+        <b><label for="">Stock</label></b>
+        <br>
+        <input type="number" name="stock" formControlName="stock">
+        <br>
+        <br>
+
+        <input type="submit" value="U P D A T E">
+
+    </form>
+
+</div>
